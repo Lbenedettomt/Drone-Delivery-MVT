@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+{% block container %}
+    <h1>Drone Delivery Register</h1>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="salvar">
+    </form>
+
+{% endblock %}
